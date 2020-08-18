@@ -1,2 +1,2 @@
 # Practice
-This is a repository for practicing html, css and js.
+This is a repository for various short and simple front-end projects made using HTML, CSS,and JavaScript.
