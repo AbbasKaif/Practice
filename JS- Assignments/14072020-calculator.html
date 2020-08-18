@@ -1,0 +1,79 @@
+<html>
+
+<head>
+	<title>Calculator</title>
+	<style type="text/css">
+		h1 {
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		function add() {
+			fno = parseInt(document.frm.num1.value);
+			sno = parseInt(document.frm.num2.value);
+			document.frm.res.value = fno + sno;
+		}
+
+		function sub() {
+			fno = parseInt(document.frm.num1.value);
+			sno = parseInt(document.frm.num2.value);
+			document.frm.res.value = fno - sno;
+		}
+
+		function mul() {
+			fno = parseInt(document.frm.num1.value);
+			sno = parseInt(document.frm.num2.value);
+			document.frm.res.value = fno * sno;
+		}
+
+		function div() {
+			fno = parseInt(document.frm.num1.value);
+			sno = parseInt(document.frm.num2.value);
+			document.frm.res.value = fno / sno;
+		}
+
+		function mod() {
+			fno = parseInt(document.frm.num1.value);
+			sno = parseInt(document.frm.num2.value);
+			document.frm.res.value = fno % sno;
+		}
+	</script>
+</head>
+
+<body>
+	<center>
+	<form name="frm">
+		<table>
+			<tr>
+				<td colspan="4">
+					<h1>Calculator</h1>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">Enter a number</td>
+				<td colspan="2"><input type="text" name="num1" /></td>
+			</tr>
+			<tr>
+				<td colspan="2">Enter second number</td>
+				<td colspan="2"><input type="text" name="num2" /></td>
+			</tr>
+			<tr>
+				<td colspan="2">Result</td>
+				<td colspan="2"><input type="text" name="res" readonly /></td>
+			</tr>
+			<tr>
+				<td><input style="width:100%;" type="button" value="+" onClick="add();" /></td>
+				<td><input style="width:100%;" type="button" value="-" onClick="sub();" /></td>
+				<td><input style="width:100%;" type="button" value="*" onClick="mul();" /></td>
+				<td><input style="width:100%;" type="button" value="/" onClick="div();" /></td>
+			</tr>
+			<tr>
+				<td><input style="width:100%;" type="button" value="%" onClick="mod();" /></td>
+				<td colspan="3"><input style="width:100%;" type="reset" value="Cancel" /></td>
+			</tr>
+		</table>
+	</form>
+	</center>
+</body>
+
+</html>

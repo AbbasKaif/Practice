@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Running Time</title>
+    <style type="text/css">
+      .timeTab {
+        border: 2px solid black;
+        height: auto;
+        margin:auto;
+        margin-top: 200px;
+        width: 150px;
+      }
+
+      #placeTime {
+        font-size: 24px;
+        text-align: center;
+      }
+    </style>
+
+    <script type="text/javascript">
+      function show() {
+        d1 = new Date();
+        document.getElementById('placeTime').innerHTML = d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+        setTimeout(show, 500);
+      }
+</script>
+  </head>
+  <body onload="show();">
+    <div class="main-container">
+      <div class="timeTab">
+        <p id="placeTime"></p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Text Area Color and Size</title>
+  <style type="text/css">
+    table,
+    textarea {
+      margin-top: 25px;
+      resize: none;
+    }
+
+    select {
+      width: 150px;
+    }
+
+    .buttonStyle {
+      width: 100px;
+    }
+
+    .copiedParagraph {
+      //background-color: purple;
+      border: 1px solid grey;
+      height: auto;
+      margin-left: 35px;
+      margin-top: 25px;
+      text-align: justify;
+      width: 370px;
+    }
+
+    .left-panel {
+      //background-color: red;
+      float: left;
+      height: auto;
+      margin-left: 300px;
+      width: 450px;
+    }
+
+    .main-container {
+      //background-color: black;
+      height: 100%;
+      margin-top: 25px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .right-panel {
+      //background-color: green;
+      float: left;
+      height: 300px;
+      width: 350px;
+    }
+  </style>
+
+  <script type="text/javascript">
+    function addText() {
+      n = document.getElementById('enteredText').value;
+      document.getElementById('editedParagraph').innerHTML = n;
+    }
+
+    function changeColor() {
+      ccolor = document.getElementById('colorNames').value;
+      document.getElementById('editedParagraph').style.color = ccolor;
+    }
+
+    function changeSize() {
+      csize = document.getElementById('fontSizes').value;
+      document.getElementById('editedParagraph').style.fontSize = csize;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="left-panel">
+      <div class="inputParagraph">
+        <textarea name="textArea" rows="14" cols="50" id="enteredText"></textarea>
+        <br><br>
+        <input class="buttonStyle" type="button" name="buttonAddText" value="Add Text" onclick="addText();">
+      </div>
+      <div class="copiedParagraph">
+        <p id="editedParagraph"></p>
+      </div>
+    </div>
+    <div class="right-panel">
+      <table>
+        <tr>
+          <td>
+            <select class="" name="defineColors" id="colorNames">
+              <option value="">--Select Color--</option>
+              <option value="IndianRed">IndianRed</option>
+              <option value="Crimson">Crimson</option>
+              <option value="DeepPink">DeepPink</option>
+              <option value="MediumVioletRed">MediumVioletRed</option>
+              <option value="Coral">Coral</option>
+              <option value="Gold">Gold</option>
+              <option value="LemonChiffon">LemonChiffon</option>
+              <option value="PapayaWhip">PapayaWhip</option>
+              <option value="DarkKhaki">DarkKhaki</option>
+              <option value="Magenta">Magenta</option>
+              <option value="MidnightBlue">MidnightBlue</option>
+              <option value="SaddleBrown">SaddleBrown</option>
+              <option value="Maroon">Maroon</option>
+            </select>
+          </td>
+          <td><input class="buttonStyle" type="button" name="setColor" value="Set Color" onclick="changeColor();"></td>
+        </tr>
+        <tr>
+          <td>
+            <select class="" name="defineFontSize" id="fontSizes">
+              <option value="">--Select Font Size--</option>
+              <option value="8px">8</option>
+              <option value="12px">12</option>
+              <option value="14px">14</option>
+              <option value="16px">16</option>
+              <option value="18px">18</option>
+              <option value="22px">22</option>
+              <option value="24px">24</option>
+              <option value="48px">48</option>
+              <option value="56px">56</option>
+            </select>
+          </td>
+          <td><input class="buttonStyle" type="button" name="setFontSize" value="Set Size" onclick="changeSize();"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Largest Number</title>
+  <script type="text/javascript">
+    function greater() {
+      firstNumber = parseInt(document.frm.fnumber.value);
+      secondNumber = parseInt(document.frm.snumber.value);
+      if (firstNumber >= secondNumber) {
+        document.frm.largestNumber.value = firstNumber;
+      }
+      else {
+        document.frm.largestNumber.value = secondNumber;
+      }
+    }
+  </script>
+</head>
+
+<body>
+	<center>
+  <form class="" name="frm" method="post">
+    <table>
+      <tr>
+        <td>Enter First Number</td>
+        <td><input type="text" name="fnumber" value=""></td>
+      </tr>
+      <tr>
+        <td>Enter Second Number</td>
+        <td><input type="text" name="snumber" value=""></td>
+      </tr>
+      <tr>
+        <td>Largest Number</td>
+        <td><input type="text" name="largestNumber" value="" readonly></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="button" name="" value="Find Greater" onclick="greater();"></td>
+      </tr>
+    </table>
+  </form>
+	</center>
+</body>
+
+</html>

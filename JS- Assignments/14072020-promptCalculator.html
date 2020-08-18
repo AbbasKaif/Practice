@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Assignment One</title>
+<script type="text/javascript">
+function add()
+{
+fno=parseInt(prompt("Enter first number"));
+sno=parseInt(prompt("Enter second number"));
+s=fno+sno;
+document.write("Add: "+s);
+}
+function sub()
+{
+fno=parseInt(prompt("Enter first number"));
+sno=parseInt(prompt("Enter second number"));
+s=fno-sno;
+document.write("Sub: "+s);
+}
+function mul()
+{
+fno=parseInt(prompt("Enter first number"));
+sno=parseInt(prompt("Enter second number"));
+s=fno*sno;
+document.write("Mul: "+s);
+}
+function div()
+{
+fno=parseInt(prompt("Enter first number"));
+sno=parseInt(prompt("Enter second number"));
+s=fno/sno;
+document.write("Div: "+s);
+}
+function mod()
+{
+fno=parseInt(prompt("Enter first number"));
+sno=parseInt(prompt("Enter second number"));
+s=fno%sno;
+document.write("Mod: "+s);
+}
+</script>
+</head>
+<body>
+<center>
+<input type="button" value="+" onClick="add();">
+<input type="button" value="-" onClick="sub();">
+<input type="button" value="*" onClick="mul();">
+<input type="button" value="/" onClick="div();">
+<input type="button" value="%" onClick="mod();">
+</center>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Paragraph Swap</title>
+  <style type="text/css">
+    .button {
+      margin-top: 100px;
+      width: 300px;
+    }
+
+    .main-container {
+      text-align: center;
+    }
+
+    .left-container,
+    .right-container {
+      float: left;
+      height: auto;
+      width: 50%;
+    }
+
+    .paragraph {
+      margin-top: 50px;
+      resize: none;
+    }
+  </style>
+
+  <script type="text/javascript">
+    function swapPara() {
+      para1 = document.getElementById('paragraphOne').value;
+      para2 = document.getElementById('paragraphTwo').value;
+      temp = para1;
+      para1 = para2;
+      para2 = temp;
+      document.getElementById('paragraphOne').value = para1;
+      document.getElementById('paragraphTwo').value = para2;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="left-container">
+      <textarea class="paragraph" rows="8" cols="80" id="paragraphOne"></textarea>
+    </div>
+    <div class="right-container">
+      <textarea class="paragraph" rows="8" cols="80" id="paragraphTwo"></textarea>
+    </div>
+    <input class="button" type="button" name="" value="Swap" onclick="swapPara();">
+  </div>
+</body>
+
+</html>

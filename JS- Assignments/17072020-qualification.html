@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Qualification</title>
+  <script type="text/javascript">
+    function display() {
+      if(document.frm.ten.checked) {
+        n = '<input type="text" name="tenthMarks" value="" placeholder="Enter 10th marks.">';
+        document.getElementById('tenth').innerHTML = n;
+      }
+      if(document.frm.twelve.checked) {
+        n = '<input type="text" name="twelfthMarks" value="" placeholder="Enter 12th marks.">';
+        document.getElementById('twelfth').innerHTML = n;
+      }
+      if(document.frm.other.checked) {
+        n = '<input type="text" name="otherQualification" value="" placeholder="Enter other qualifications.">';
+        document.getElementById('otherQualify').innerHTML = n;
+      }
+    }
+  </script>
+</head>
+
+<body>
+	<center>
+  <form name="frm">
+    <table>
+      <tr>
+        <td>Qualification</td>
+        <td><input type="checkbox" name="ten" value="">10th</td>
+        <td><input type="checkbox" name="twelve" value="">12th</td>
+        <td><input type="checkbox" name="other" value="">Other</td>
+      </tr>
+      <tr>
+        <td style="width: 70px;"></td>
+        <td id="tenth"></td>
+        <td id="twelfth"></td>
+        <td id="otherQualify"></td>
+      </tr>
+    </table>
+    <input type="button" name="" value="Show" onclick="display();">
+  </form>
+	</center>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Password Hide/Show- Two Buttons</title>
+    <script type="text/javascript">
+      function show() {
+        document.frm.pwd.type = "text";
+      }
+      function hide() {
+      document.frm.pwd.type = "password";
+      }
+    </script>
+  </head>
+  <body>
+		<center>
+    <form class="" name="frm">
+      <table>
+        <tr>
+          <td>Password</td>
+          <td><input type="password" name="pwd" value=""></td>
+          <td><input type="button" name="" value="Show" onclick="show();"></td>
+          <td><input type="button" name="" value="Hide" onclick="hide();"></td>
+        </tr>
+      </table>
+    </form>
+		</center>
+  </body>
+</html>

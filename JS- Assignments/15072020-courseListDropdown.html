@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Course List Dropdown</title>
+  <script type="text/javascript">
+    function update() {
+      document.frm.updatedValue.value = document.frm.courselist.value;
+    }
+  </script>
+</head>
+
+<body>
+  <form class="" name="frm">
+    <select class="" name="courselist">
+      <option value="BCA">BCA</option>
+      <option value="MCA">MCA</option>
+      <option value="B.TECH">B.TECH</option>
+      <option value="M.TECH">M.TECH</option>
+    </select>
+    <br><br>
+    <input type="text" name="updatedValue" value="" readonly>
+    <br><br>
+    <input type="button" name="" value="Click" onclick="update();">
+  </form>
+</body>
+
+</html>

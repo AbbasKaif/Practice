@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up Form</title>
+		<style>
+			body {
+				font-family: sans-serif;
+				font-size: small;
+				color: yellow;
+			}
+			
+			input {
+				width: 100%;
+			}
+			
+			.cell-style {
+				text-align: left;
+			}
+			
+			.select-btn {
+				width: 15px;
+			}
+			
+			table {
+				padding-top: 12px;
+			}
+			
+			td {
+				padding-bottom: 15px;
+				padding-right: 15px;
+				text-align: right;
+			}
+			
+			.top-container {
+				height: 40px;
+				width: 490px;
+				background-color: #ef7f00;
+				text-align: left;
+				line-height: 40px;
+				padding-left: 10px;
+			}
+			
+			input {
+				height: 20px;
+				border-radius: 5px;
+			}
+			
+			select {
+				height: 25px;
+				border-radius: 5px;
+			}
+			
+			.bottom-container {
+				height: 50px;
+				width: 485px;
+				background-color: #ef7f00;
+				padding-right: 15px;
+				text-align: right;
+			}
+			
+			.form-container {
+				width: 500px;
+				background-color: #252138;
+				height: auto;
+			}
+			
+			span {
+				position: absolute;
+				margin-top: 5px;
+			}
+			
+			.submit-btn,
+			.cancel-btn {
+				width: 100px;
+				height: 33px;
+				margin-top: 8px;
+				color: #ffffff;
+				border-style: solid;
+			}
+			
+			.submit-btn {
+				background-color: #2ac05b;
+			}
+			
+			.cancel-btn {
+				background-color: #e73247;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<center>
+			<div class="top-container">
+				Sign Up
+			</div>
+			
+			<div class="form-container">
+				<form>
+				<table>
+					<tr>
+						<td>First Name</td>
+						<td colspan="3" class="cell-style"><input type="text" placeholder="Enter First Name..."></td>
+					</tr>
+					<tr>
+						<td>Last Name</td>
+						<td colspan="3" class="cell-style"><input type="text" placeholder="Enter Last Name..."></td>
+					</tr>
+					<tr>
+						<td>Screen Name</td>
+						<td colspan="3" class="cell-style"><input type="text" placeholder="Enter Screen Name..."></td>
+					</tr>
+					<tr>
+						<td>Date of Birth</td>
+						<td class="cell-style">
+							<select style="width: 80px;">
+								<option>Jan</option>
+								<option>Feb</option>
+								<option selected="">March</option>
+								<option>April</option>
+								<option selected="">May</option>
+								<option>June</option>
+								<option>July</option>
+								<option>Aug</option>
+								<option>Sep</option>
+								<option>Oct</option>
+								<option>Nov</option>
+								<option>Dec</option>
+							</select>
+						</td>
+						<td>
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option selected="">5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+								<option>13</option>
+								<option>14</option>
+								<option>15</option>
+								<option>16</option>
+								<option>17</option>
+								<option>18</option>
+								<option>19</option>
+								<option>20</option>
+								<option>21</option>
+								<option>22</option>
+								<option>23</option>
+								<option>24</option>
+								<option>25</option>
+								<option>26</option>
+								<option>27</option>
+								<option>28</option>
+								<option>29</option>
+								<option>30</option>
+								<option>31</option>
+							</select>
+						</td>
+						<td>
+							<select>
+								<option selected="">1985</option>
+								<option>1986</option>
+								<option>1987</option>
+								<option>1988</option>
+								<option>1989</option>
+								<option>1990</option>
+								<option>1991</option>
+								<option>1992</option>
+								<option>1993</option>
+								<option>1994</option>
+								<option>1995</option>
+								<option>1996</option>
+								<option>1997</option>
+								<option>1998</option>
+								<option>1999</option>
+								<option>2000</option>
+								<option>2001</option>
+								<option>2002</option>
+								<option>2003</option>
+								<option>2004</option>
+								<option>2005</option>
+								<option>2006</option>
+								<option>2007</option>
+								<option>2008</option>
+								<option>2009</option>
+								<option>2010</option>
+								<option>2011</option>
+								<option>2012</option>
+								<option>2013</option>
+								<option>2014</option>
+								<option>2015</option>
+								<option>2016</option>
+								<option>2017</option>
+								<option>2018</option>
+								<option>2019</option>
+								<option>2020</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Gender</td>
+						<td colspan="3" class="cell-style"><input type="radio" name="gender" value="Male" class="select-btn"><span style="padding-right: 10px;">Male</span>
+						<input type="radio" name="gender" value="Female" class="select-btn" style="margin-left: 35px;"><span>Female</span>
+						</td>
+					</tr>
+					<tr>
+						<td>Country</td>
+						<td colspan="3" class="cell-style">
+							<select style="width: 100%;">
+								<option>India</option>
+								<option>Ireland</option>
+								<option selected="">USA</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Email</td>
+						<td colspan="3" class="cell-style"><input type="email" placeholder="Enter Email..."></td>
+					</tr>
+					<tr>
+						<td>Phone</td>
+						<td colspan="3" class="cell-style"><input type="text" placeholder="Enter Phone..."></td>
+					</tr>
+					<tr>
+						<td>Password</td>
+						<td colspan="3" class="cell-style"><input type="password"></td>
+					</tr>
+					<tr>
+						<td>Confirm Password</td>
+						<td colspan="3" class="cell-style"><input type="password"></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="3" class="cell-style"><input type="checkbox" class="select-btn"><span>I agree to the Terms of Use</span></td>
+					</tr>
+				</table>
+				</form>
+			</div>
+			
+			<div class="bottom-container">
+				<tr>
+					<td><input type="button" value="submit" class="submit-btn"></td>
+					<td><input type="button" value="Cancel" class="cancel-btn"></td>
+				</tr>
+			</div>
+		</center>
+	</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Login | Exam Portal</title>
+  <style type="text/css">
+    body {
+      font-size: 20px;
+    }
+
+    table {
+      border: 1px solid;
+      margin: auto;
+      padding: 25px;
+    }
+
+    #usernameValidationError,
+    #passwordValidationError {
+      color: red;
+      font-size: 15px;
+      font-style: italic;
+      margin: 0;
+      margin-left: 12px;
+    }
+
+    .btn {
+      font-size: 20px;
+      width: 100%;
+    }
+
+    .login-container {
+      margin-top: 150px;
+    }
+
+    .main-container {
+      height: auto;
+      width: 100%;
+    }
+
+    .row-format td {
+      padding: 15px;
+    }
+  </style>
+
+  <script type="text/javascript">
+    function validateUsername() {
+      len = document.frm.username.value.length;
+      if (len == 0 || document.frm.username.value != "ICT") {
+        document.getElementById('usernameValidationError').innerHTML = "Invalid Username";
+        document.frm.username.focus();
+      } else {
+        document.getElementById('usernameValidationError').innerHTML = "";
+      }
+    }
+
+    function validatePassword() {
+      len = document.frm.username.value.length;
+      if (len == 0 || document.frm.password.value != "Dk") {
+        document.getElementById('passwordValidationError').innerHTML = "Incorrect Password";
+        document.frm.password.focus();
+      } else {
+        document.getElementById('passwordValidationError').innerHTML = "";
+      }
+    }
+
+    function redirectToPage() {
+      lenUsername = document.frm.username.value.length;
+      lenPassword = document.frm.password.value.length;
+      if (lenUsername == 0 || lenPassword == 0) {
+        alert("Invalid Account! Please re-check your username and password");
+				window.location.assign("19072020-A01-loginPageExamPortal.html");
+      }
+      else {
+        window.location.assign("19072020-A02-QnAPageExamPortal.html");
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="login-container">
+      <form name="frm">
+        <table>
+          <tr class="row-format">
+            <td>Enter Username</td>
+            <td><input type="text" name="username" value="" onblur="validateUsername();"></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p id="usernameValidationError"></p>
+            </td>
+          </tr>
+          <tr class="row-format">
+            <td>Enter Password</td>
+            <td><input type="password" name="password" value="" onblur="validatePassword();"></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p id="passwordValidationError"></p>
+            </td>
+          </tr>
+          <tr class="row-format">
+            <td colspan="2"><input type="button" id="login-btn" class="btn" value="Log In" onclick="redirectToPage();"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
