@@ -1,4 +1,4 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html lang="en">
 	<body>
 		<h2>Practice</h2>
