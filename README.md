@@ -2,7 +2,7 @@
 <html lang="en">
 	<body>
 		<h2>Practice</h2>
-		<p>This repository contains various short and simple front-end projects made using HTML, CSS,and JavaScript.</p>
+		<p>This repository contains various short and simple front-end projects made using HTML, CSS, and JavaScript.</p>
 		<h3>CSS</h3>
 		<ul>
 			<li>Styles of chat window</li>
